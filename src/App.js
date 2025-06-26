@@ -1,19 +1,12 @@
-import './App.css';
+import Navbar from './Navabar';
+import Home from './Home'
 
 function App() {
-  const title = "Welcome to Alex blog"
-  const likes = 60;
-  const link = "https://github.com/AlexandreCerf/dojo-blog-alex";
   return (
     <div className="App">
+      <Navbar/>
       <div className="content">
-        <h1>{title}</h1>
-        <p>Liked { likes } times</p>
-        <p>{ 10 }</p>
-        <p>{ "Hey" }</p>
-        <p>{ [1,2,3,4,5,6] }</p>
-        <p>{ Math.random()*10}</p>
-        <a href={link}> Repo github Project</a>
+        <Home/>
       </div>
     </div>
   );
